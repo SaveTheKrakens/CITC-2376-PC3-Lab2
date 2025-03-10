@@ -34,7 +34,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.savethekrakens.taskmanagerapplication.ui.theme.TaskManagerApplicationTheme
-import kotlin.concurrent.timerTask
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -170,7 +169,7 @@ fun TaskItem(taskName: String, onDeleteTask: (String) -> Unit) {
 @Composable
 fun TopBarPreview() {
     TaskManagerApplicationTheme {
-        TopBar(onAddTask = { task -> })
+        TopBar(onAddTask = { })
     }
 }
 
